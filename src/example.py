@@ -14,4 +14,4 @@ if __name__=="__main__":
     logger = Logger("Exemplo-HTTP", HttpDestination('http://localhost:8000/saveLog'))
     #logger.logWarning("Isto será enviado como parâmetro de uma requisição HTTP.")
 
-
+    
