@@ -100,5 +100,5 @@ logger = Logger(pattern="[%T] %N at %D with level %L: %M")
 # Ex.: [2018-07-21 14:29:45.415818] Logger at Console with level DEBUG: Esta é a mensagem.
 
 logger = Logger(pattern="[%L] : %T : %N : %D: %M")
-# Ex.: [2018-07-21 14:29:45.415818] Logger at Console with level DEBUG: Esta é a mensagem.
+# Ex.: [DEBUG] : 2018-07-21 14:29:45.415818 : Logger : Console : Esta é a mensagem.
 ```
