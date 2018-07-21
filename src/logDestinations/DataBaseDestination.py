@@ -1,11 +1,12 @@
 from logDestinations.LogDestination import LogDestination
+from dataBase.LogRepository import LogRepository
 
 class DataBaseDestination(LogDestination):
-    def __init__(self):
-        pass
+    def __init__(self, configuration=None):
+        self.logRepository = LogRepository(configuration)
 
     def getName(self):
-        return "Console"
+        return self.logRepository.connection.configuration.database
         
     def writeLog(self, log):
-        print(log)
+        self.logRepository.createLog(log)

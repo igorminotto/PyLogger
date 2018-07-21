@@ -1,4 +1,4 @@
-from LogLevel import LogLevel
+from logger.LogLevel import LogLevel
 from logDestinations.ConsoleDestination import ConsoleDestination
 from datetime import datetime
 
